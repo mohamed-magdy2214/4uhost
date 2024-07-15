@@ -1,0 +1,104 @@
+@media screen and (max-width: 599px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 110%;
+    }
+    .carousel-control-next {
+        left: 50% !important;
+    }
+    .carousel-control-prev {
+        left: 30% !important;
+    }
+    header .item {
+        display: block !important;
+    }
+    header .item .text {
+        margin-bottom: 25px;
+    }
+    header .item img {
+        width: 100% !important;
+    }
+    .domain {
+        margin-top: 250px;
+    }
+    .prices a {
+        padding: 10px 28px;
+    }
+    .order h2 , 
+    .order p {
+        width: 100% !important;
+    }
+    header .carousel-item .text h2 {
+        line-height: 40px;
+    }
+    .about .image,
+    .about .desc {
+        width: 100% !important;
+    }
+    .contact .form {
+        width: 100% !important;
+    }
+    footer .container {
+        text-align: center !important;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 110%;
+    }
+    .carousel-control-next {
+        left: 120px !important;
+    }
+    .carousel-control-prev {
+        left: 50px !important;
+    }
+    .order h2 , 
+    .order p {
+        width: 100% !important;
+    }
+    header .carousel-item .text h2 {
+        line-height: 45px;
+    }
+    .about .image,
+    .about .desc {
+        width: 100% !important;
+    }
+    .contact .form {
+        width: 100% !important;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    header .carousel-item .text h2 {
+        line-height: 45px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 110%;
+    }
+    .carousel-control-next {
+        left: 100px !important;
+    }
+    .carousel-control-prev {
+        left: 30px !important;
+    }
+    .order h2 , 
+    .order p {
+        width: 100% !important;
+    }
+    .about .image,
+    .about .desc {
+        width: 100% !important;
+    }
+    .contact .form {
+        width: 100% !important;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    header .carousel-item .text h2 {
+        line-height: 45px;
+    }
+}
+@media screen and (min-width:1200px) {
+
+    }

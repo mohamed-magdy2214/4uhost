@@ -1,0 +1,321 @@
+html {
+    scroll-behavior: unset !important;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:not([href]):not([class]):hover {
+    color: #fff;
+}
+
+/* variables */
+:root {
+    --main-color: #43eee4;
+    --sec-color : #2e3192;
+    --main-shadow: 0 0 59px rgba(30, 30, 29, 0.09);
+    --main-transition: 0.5s;
+}
+
+/* special class  */
+.main-heading {
+    color: var(--sec-color);
+}
+.main-heading > span {
+    color: var(--main-color);
+}
+.main-heading ,
+.main-heading > span {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main-btn {
+    padding: 10px 40px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: all ease-in var(--main-transition);
+}
+
+#slideUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--sec-color);
+    display: none;
+}
+#slideUp i {
+    font-size: 35px;
+}
+
+
+header {
+    background-image: url(../images/banner2.png);
+    background-size: cover;
+    height: 100vh;
+}
+.navbar-toggler {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main-color) !important;
+}
+.navbar-nav ul li .nav-link {
+    color: #fff;
+    padding: 0px 25px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.navbar-nav ul {
+    width: 60%;
+}
+.navbar-nav ul li .nav-link:hover {
+    color: var(--main-color);
+}
+header .carousel-item > div {
+    gap: 40px;
+    width: calc((100%/2)- 40px);
+}
+header .carousel-item .text h2 {
+    width: 50%;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    
+}
+header .carousel-item .text a {
+    background-color: #d5d6fd;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 24px;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all var(--main-transition);
+}
+header .carousel-item .text a:hover {
+    background-color: var(--main-color);
+}
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    z-index: 1;
+    color: #fff;
+    opacity: 0.9 !important;
+}
+.carousel-control-next {
+    left: 65px !important;
+}
+header button .icon {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--sec-color);
+    justify-content: center;
+    align-items: center;
+    transition: all var(--main-transition);
+}
+header button .icon:hover {
+    background-color: var(--main-color)
+}
+.domain .search-bar,
+.domain .prices {
+    padding: 10px 30px;
+    border-radius: 50px;
+    box-shadow: var(--main-shadow);
+    background-color: #fcfcfd;
+}
+.domain .search-bar input::placeholder {
+    font-size: 18px;
+}
+.domain .search-bar input:focus {
+    box-shadow: none !important;
+}
+.domain .search-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.domain .search-bar a i {
+    color: var(--sec-color);
+}
+.domain .prices {
+    border-radius: 0;
+}
+.domain .prices .table span {
+    background-color: transparent !important;
+}
+.table>:not(caption)>*>* {
+    background-color: transparent !important;
+}
+.prices .table span {
+    color: var(--sec-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.prices .table .vip {
+    font-weight: normal;
+    color: inherit;
+}
+.prices a {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.prices a:hover {
+    background-color: var(--sec-color);
+}
+.quality .card:hover span {
+    background-color: var(--sec-color);
+}
+.quality .card:hover span i {
+    color: #fff;
+}
+.quality .card:hover a {
+    background-color: var(--sec-color);
+}
+.quality .card span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid var(--main-color);
+    margin: 0 auto;
+    transition: all ease-in var(--main-transition);
+}
+.quality .card span i {
+    font-size: 70px;
+    color: var(--sec-color);
+    transition: all ease-in var(--main-transition);
+}
+.quality .card .desc h3 {
+    font-size: 20px;
+}
+.quality .card .desc p {
+    line-height: 1.8;
+}
+.quality .card a {
+    display: inline-block !important;
+    width: 70% !important;
+    margin: 0 auto;
+}
+.order .row .item {
+    border: 3px solid var(--main-color);
+    padding: 20px 0;
+    margin-bottom: 30px;
+    transition: all ease-in var(--main-transition);
+}
+.order .row .item h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--sec-color);
+    transition: all ease-in var(--main-transition);
+}
+.order .row .item h4 {
+    font-weight: normal;
+    font-size: 24px;
+}
+.order .row .item h4 > span {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 14px;
+}
+.order .row .item > span {
+    display: block;
+    margin-bottom: 22px;
+    font-size: 18px;
+}
+.order .row .item > a {
+    display: inline-block;
+    border: 1px solid var(--sec-color);
+    border-radius: 50px;
+    width: 32%;
+    padding: 4px;
+    color: var(--sec-color);
+    margin: 20px 0;
+    transition: all ease-in var(--main-transition);
+}
+.order .row .item > a:hover {
+    background-color: var(--sec-color);
+    color: #fff;
+}
+.order .row .items:hover .item {
+    border-color: var(--sec-color);
+}
+.order .row .items:hover .main-btn {
+    background-color: var(--sec-color);
+}
+.order .row .items:hover h3 {
+    color: var(--main-color);
+}
+.about .desc p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.about .main-btn:hover {
+    background-color: var(--sec-color);
+}
+.contact .form input ,
+.contact .form textarea {
+    margin-bottom: 25px;
+    border-radius: 50px;
+    padding: 15px 20px;
+    border: 1px solid var(--sec-color );
+    color: var(--sec-color);
+}
+.contact .form input::placeholder {
+    color: var(--sec-color);
+    font-size: 18px;
+    opacity: 0.6;
+}
+.contact .form input:focus {
+    box-shadow: none;
+}
+.contact .form textarea {
+    border-radius: 30px;
+    color: var(--sec-color);
+    font-size: 20px;
+    opacity: 0.6;
+    margin-bottom: 50px;
+}
+.contact .form .main-btn:hover {
+    background-color: var(--sec-color);
+}
+footer {
+    background-color: var(--sec-color);
+}
+footer h3 {
+    margin-bottom: 18px;
+}
+footer .item > span {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+}
+footer .item > span i {
+    margin-right: 5px;
+}
